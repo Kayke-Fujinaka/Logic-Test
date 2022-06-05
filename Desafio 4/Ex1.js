@@ -27,6 +27,6 @@ console.log(menores17);
 //EX 6: Retorne a soma de todos os valores menores do que 20
 const somaMenores20 = ages
   .filter((value) => value < 20)
-  .reduce((sum, value) => (sum += value));
+  .reduce((sum, value) => (sum + value));
 console.log(somaMenores20);
 
