@@ -15,7 +15,15 @@ const companies = [
   { name: "Apple", marketValue: 845, CEO: "Tim Cook", foundedOn: 1976 },
 ];
 
-const newList = companies.reduce((acc, value) => {
-    return acc += value.marketValue
-}, 0)
-console.log(newList)
+const newList = companies.reduce((acc, value) => (acc += value.marketValue), 0);
+console.log(newList);
+
+// Ex 2
+/* 
+- Através do Array abaixo, gere uma mensagem "Vinho cozido, Tomate cozido, Cebola cozida, Cogumelo Cozido"
+- Exibe String no Console
+*/
+
+const ingredientes = ["vinho", "tomate", "cebola", "cogumelo"];
+
+
