@@ -24,6 +24,26 @@ console.log(newList);
 - Exibe String no Console
 */
 
-const ingredientes = ["vinho", "tomate", "cebola", "cogumelo"];
+const ingredientes = ["vinho", "tomate", "cebola", "cogumelo", "Rúcula"];
 
+const cook = ingredientes
+  .map((value) => {
+    const primeiraLetra = value[0].toUpperCase();
+    return value.replace(value[0], primeiraLetra);
+  })
+  .reduce((acc, value, index, array) => {
+    if (index === array.length - 1) {
+      if (value.slice(-1) === "a") {
+        return acc + `${value} cozida`;
+      } else {
+        return acc + `${value} cozido`;
+      }
+    }
 
+    if (value.slice(-1) === "a") {
+      return acc + `${value} cozida, `;
+    }
+
+    return acc + `${value} cozido, `;
+  }, "");
+console.log(cook);
