@@ -2,8 +2,8 @@ function rangeOfNumbers(startNum, endNum) {
   if (endNum - startNum === 0) {
     return [startNum];
   } else {
-    let numbers = rangeOfNumbers(startNum, endNum - 1);
-    numbers.push(endNum);
+    let numbers = rangeOfNumbers(startNum + 1, endNum);
+    numbers.unshift(startNum);
     return numbers;
   }
 }
