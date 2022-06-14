@@ -40,18 +40,15 @@ console.log(`
 
 let a = 120;
 let b = 24;
+
 console.log(`Antes: 
-a: ${a}
-b: ${b}
-`)
-
-[a, b] = [b, a];
-
-temp = a;
-a = b;
-b = temp;
-console.log(`Depois: 
 a: ${a}
 b: ${b}
 `);
 
+[a, b] = [b, a];
+
+console.log(`Depois: 
+a: ${a}
+b: ${b}
+`);
