@@ -3,6 +3,8 @@
 // Ele permite guardar valores únicos de um tipo
 // Seja primitivo, string, inteiro, objeto, etc
 
+// Ele não aceita valores repetidos, mas apenas objetos repetidos
+
 let mySet = new Set(["Kayke", "João", "Mario"]);
 
 // Vai pegar todo o mySet junto do tamanho dele atual
