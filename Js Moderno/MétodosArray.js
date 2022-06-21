@@ -91,3 +91,18 @@ const newArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 // Array.fill() vai preencher o Array com a string 'Intruso', mas... vai iniciando na posição 4 e interrompendo na posição 6
 newArr.fill("Intruso", 4, 6)
 console.log(newArr)
+
+
+
+
+
+// -------------- Array.includes() --------------
+
+console.log(`
+
+
+--- Array.includes() ---
+`);
+const array2 = [1,2,3,4,5]
+console.log(array2.includes(2))
+console.log(array2.includes(6))

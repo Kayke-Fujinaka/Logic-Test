@@ -13,6 +13,7 @@ e uma flag dizendo se o generator foi finalizado ou não.
 
 function* genNames() {
   console.log("Chamando o primeiro nome");
+  // A palavra-chave yield é usada para pausar e resumir uma generator function.
   yield "Pedro";
   console.log("Chamando o segundo nome");
   yield "Rafael";
@@ -23,3 +24,4 @@ function* genNames() {
 const names = genNames();
 
 console.log(names.next());
+console.log(names.return("Opa"));
