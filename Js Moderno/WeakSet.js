@@ -1,4 +1,5 @@
 // WeakSet
+const { inspect } = require('util');
 
 let obj1 = {
   name: "Melissa",
@@ -11,4 +12,4 @@ let obj2 = {
 };
 
 let ws = new WeakSet([obj1, obj2]);
-console.log(ws);
+console.log(inspect(ws, { showHidden: true }));

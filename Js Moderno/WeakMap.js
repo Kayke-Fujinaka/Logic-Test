@@ -1,6 +1,9 @@
 // WEAKMAP
+const { inspect } = require("util");
 
-let obj1 = {
+const wm = new WeakMap();
+
+let obj = {
   name: "Melissa",
   age: 12,
 };
@@ -10,6 +13,5 @@ let obj2 = {
   age: 42,
 };
 
-let wm = new WeakMap();
-
-wm.set(obj1, "Info da Melissa");
+wm.set(obj, "Info da Melissa");
+console.log(inspect(wm, { showHidden: true }));
