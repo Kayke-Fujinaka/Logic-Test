@@ -3,6 +3,6 @@
 let foo = Symbol("name");
 let fo = Symbol("name");
 
-console.log(foo);
+console.log(typeof foo);
 console.log(foo === fo);
 console.log(foo === foo);
