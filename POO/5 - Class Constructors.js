@@ -6,10 +6,20 @@ e que é o primeiro a ser executado sempre quando você cria um novo objeto daqu
 */
 
 class User {
-  constructor(param1, param2) {
-    this.atribute1 = param1;
-    this.atribute2 = param2;
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
   }
 }
 
-var userOne = new User();
+const userOne = new User(
+  "Lucas Pereira Gomez Fernandez",
+  "lucas42gomezrh@outlook.com"
+);
+const userTwo = new User(
+  "Kayke Fujinaka",
+  "kayke.fujinaka@gcbinvestimentos.com"
+);
+
+console.log(userOne);
+console.log(userTwo);
